@@ -1,0 +1,16 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	name = Thor*sten Schwesig
+	email = 89909507+schwesig@users.noreply.github.com
+[core]
+	editor = vi
+	excludesfile = /var/home/tschwesi/.gitignore_global
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[cola]
+	spellcheck = false
