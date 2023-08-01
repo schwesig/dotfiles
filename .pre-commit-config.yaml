@@ -1,0 +1,17 @@
+repos:
+- repo: https://github.com/schwesig/dotfiles
+  rev: main
+  hooks:
+  - id: requirements-txt-fixer
+  - id: check-added-large-files
+  - id: check-byte-order-marker
+  - id: check-case-conflict
+  - id: check-docstring-first
+  - id: check-json
+  - id: check-merge-conflict
+  - id: check-symlinks
+  - id: check-yaml
+  - id: detect-private-key
+  - id: end-of-file-fixer
+  - id: trailing-whitespace
+  - id: end-of-file-fixer
