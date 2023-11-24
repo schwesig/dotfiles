@@ -1,6 +1,6 @@
 repos:
 - repo: https://github.com/schwesig/dotfiles
-  rev: main
+  rev: v3.2.2
   hooks:
   - id: requirements-txt-fixer
   - id: check-added-large-files
