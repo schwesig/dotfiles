@@ -6,3 +6,59 @@ disabled = false
 [username]
 style_user = "bold blue"
 show_always = true
+
+
+########
+# Color wheel Blue #208dc6, Orange #c65720, yellow #c6aa20, purple #8f20c6
+
+format = """
+[\uE0B6](fg:#9a3ac7)[$directory](bg:#9a3ac7)[\uE0B0](fg:#9a3ac7 bg:black)[\uE0B0](fg:black bg:#c7693a)[$kubernetes](bg:#c7693a fg:white)[\uE0B0](fg:#c7693a bg:black)[\uE0B0](fg:black bg:#9A8565)$git_branch[\uE0B0](fg:#9A8565 bg:#AE9D84)$git_status[\uE0B0](fg:#AE9D84 bg:black)[\uE0B0](fg:black bg:#208dc6)$time[\uE0B0](#208dc6 bg:none) $cmd_duration$character """
+
+add_newline = true
+
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[➜](bold white)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+
+[directory]
+truncation_length = 8
+truncation_symbol = '…/'
+truncate_to_repo = false
+style = "bg:#9a3ac7 fg:white"
+read_only_style = "bg:#9a3ac7 fg:white"
+
+[git_branch]
+format = "[ $symbol$branch ]($style)"
+style = "bg:#9A8565 fg:white"
+
+[git_status]
+format = "[ $all_status$ahead_behind ]($style)"
+style = "bg:#AE9D84 fg:white"
+
+[helm]
+disabled = true
+detect_files = []
+
+[kubernetes]
+disabled=false
+style = "bg:#c7693a fg:white"
+format = "[ $symbol$user@$context/$namespace]($style)"
+
+[[kubernetes.contexts]]
+# Use capture groups to extract cluster and username to shorten display
+context_pattern = ".*/api-(?P<cluster>\\w+).*"
+context_alias = "$cluster"
+user_pattern = "(?P<username>\\w+)/.*"
+user_alias = "$username"
+symbol = "☸"
+
+[package]
+disabled = true
+
+[status]
+disabled = false
+symbol = ''
+
+[time]
+disabled = false
+format = "[ $time ]($style)"
+style = "bg:#208dc6 fg:white"
