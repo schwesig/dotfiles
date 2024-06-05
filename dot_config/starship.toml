@@ -1,0 +1,8 @@
+[kubernetes]
+symbol = "☸️  "
+style = "green"
+disabled = false
+  
+[username]
+style_user = "bold blue"
+show_always = true
