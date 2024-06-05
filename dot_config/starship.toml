@@ -1,11 +1,11 @@
-[kubernetes]
-symbol = "☸️  "
-style = "green"
-disabled = false
+## [kubernetes]
+## symbol = "☸️  "
+## style = "green"
+## disabled = false
   
-[username]
-style_user = "bold blue"
-show_always = true
+## [username]
+## style_user = "bold blue"
+## show_always = true
 
 
 ########
