@@ -1,3 +1,4 @@
 .oh-my-zsh/cache/completions
 **/cache/**
 .oh-my-zsh/custom/plugins/zsh-autosuggestions
+**/*.zwc
