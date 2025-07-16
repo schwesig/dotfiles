@@ -1,4 +1,39 @@
-.oh-my-zsh/cache/completions
-**/cache/**
-.oh-my-zsh/custom/plugins/zsh-autosuggestions
+# 🧼 Ignoriere oh-my-zsh Plugin-Ordner und generierte Dateien
+.oh-my-zsh/plugins/
+.oh-my-zsh/themes/
+.oh-my-zsh/cache/
 **/*.zwc
+
+# 👤 Ignoriere Third-Party Plugins in custom
+.oh-my-zsh/custom/plugins/zsh-autosuggestions/
+.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
+.oh-my-zsh/custom/plugins/fast-syntax-highlighting/
+
+# 🎨 Ignoriere powerlevel10k Unterverzeichnisse außer Config-Dateien
+.oh-my-zsh/custom/themes/powerlevel10k/gitstatus/
+.oh-my-zsh/custom/themes/powerlevel10k/internal/
+
+# 🧪 Ignoriere alles, was automatisch erzeugt wird
+**/.zcompdump*
+**/cache/
+**/.DS_Store
+**/Thumbs.db
+**/*.log
+
+# 🔒 Ignoriere sensible oder systemabhängige SDKMAN-Dateien
+.sdkman/
+!sdkman-init.zsh  # Optional, falls du das bewusst tracken willst
+
+# 💻 Optional: systemabhängige Terminal-/GUI-Konfigs ignorieren
+.vscode/
+.idea/
+.terraform/
+*.swp
+*.tmp
+
+# 🧩 Chezmoi Metadaten & Backup-Kollisionen vermeiden
+chezmoi.toml
+chezmoi.yaml
+chezmoi.json
+*.bkp
+
