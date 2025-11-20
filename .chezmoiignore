@@ -32,7 +32,6 @@
 *.tmp
 
 # 🧩 Chezmoi Metadaten & Backup-Kollisionen vermeiden
-chezmoi.toml
 chezmoi.yaml
 chezmoi.json
 *.bkp
